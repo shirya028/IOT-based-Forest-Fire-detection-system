@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family:'Poppins';
+}
+
+.blurx{
+    filter: blur(1px);
+}
+
+.unblurx{
+    position: relative;
+    z-index: 1;
+}
+
+.text-1{
+    font-weight: bold;
+}
+.toastx{
+    position:absolute;
+    top: 10px;
+    z-index:9;
+    right: 10px;
+    width:400px;
+    border-radius: 12px;
+    background-color: rgb(247, 124, 124);
+    height:fit-content;
+    padding: 20px 35px 20px 25px;
+    box-shadow:0 5px 10px rgba(190, 85, 85, 0.1);
+    border-left: 6px solid red;
+    transform: translateX(110%); 
+    transition: all 0.5s cubic-bezier(0.68,-0.55,0.256,1.35);
+}
+
+.toastx.activex{
+    transform: translateX(0%);
+}
+.toastx .toastx-content{
+    display: flex;
+    align-items: center;
+}
+
+.toastx-content{
+    display: flex;
+    flex-direction:row;
+}
+
+.toastx-content .check{
+    display: flex;
+    align-items: center;
+    padding-bottom: 3px;
+    margin-right: 15px;
+    justify-content: center;
+   height: 35px;
+   width: 35px;
+   background-color:#eb0000;
+   color: white;
+   font-size:20px;
+   border-radius:50px ;
+}
+
+
+.close{
+    cursor: pointer;
+    position:absolute;
+    top: 35px;
+    right:30px;
+    opacity:0.6;
+}
+
+.close:hover{
+    opacity: 1;
+}
+#buttonx{
+    background-color: blue;
+}
