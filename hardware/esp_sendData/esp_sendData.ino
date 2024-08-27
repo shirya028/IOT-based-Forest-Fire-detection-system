@@ -12,8 +12,8 @@ const char* password = "123456789";
  
 const char* serverName = "http://forest-fire-detection-iot.000webhostapp.com//post-data.php";
  
-String apiKeyValue = "#54321";//main page
-String apiKeyValue2 = "#12345";//dashboard
+String apiKeyValue = "";//main pagefor eg:-#54321
+String apiKeyValue2 = "";//dashboardeg:-12345
  
 String sensorName = "Fire sensor";
 String sensorLocation = "Rit";
